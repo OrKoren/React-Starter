@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router , browserHistory, Route } from 'react-router'
+import { Router , browserHistory, Route, hashHistory } from 'react-router'
 import App from './App'
 import Dashboard from './dashboard/Dashboard'
 
 ReactDOM.render((
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={App} />
         <Route path="/dashboard" component={Dashboard} />
     </Router>
